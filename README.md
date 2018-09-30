@@ -1,22 +1,26 @@
 # _Spark-Gradle-Template_
 A barebones project with scala, apache spark built using gradle. Spark-shell provides `spark` and `sc` variables pre-initialised, here I did the same using a *scala trait* that you can extend.
 
+This updated version assumes you know how to use gradle and if these updates are out of date you can fix and move forward. This version uses the latest (as of Oct 2019) spark 2.3.2, via a varible, and removed the out of date gradle wrapper and expects you to use your own gradle. 
+
 ## Prerequisites
 - [Java](https://java.com/en/download/)
-- [Gradle](https://gradle.org/)
+- [Gradle](https://gradle.org/install/)
 - [Scala](https://www.scala-lang.org/)
+
+For macOS install these via [homebrew](https://brew.sh).
 
 ## Build and Demo process
 
 ### Clone the Repo
-`git clone https://github.com/faizanahemad/spark-gradle-template.git`
+`git clone https://github.com/robertboxall/spark-gradle-template.git`
 
 ### Build
-`./gradlew clean build`
+`gradle clean build`
 ### Run
-`./gradlew run`
+`gradle run`
 ### All Together
-`./gradlew clean run`
+`gradle clean run`
 
 
 ## What the demo does?
@@ -83,13 +87,13 @@ object Main extends InitSpark {
 Just import it into your favorite IDE as a gradle project. Tested with IntelliJ to work. Or use your favorite editor and build from command line with gradle.
 
 ## Libraries Included
-- Spark - 2.1.0
+- Spark - 2.3.2
 
 ## Useful Links
 - [Spark Docs - Root Page](http://spark.apache.org/docs/latest/)
 - [Spark Programming Guide](http://spark.apache.org/docs/latest/programming-guide.html)
 - [Spark Latest API docs](http://spark.apache.org/docs/latest/api/)
-- [Scala API Docs](http://www.scala-lang.org/api/2.12.1/scala/)
+- [Scala API Docs](http://www.scala-lang.org/api/2.11.1/scala/)
  
 ## Issues or Suggestions
 
